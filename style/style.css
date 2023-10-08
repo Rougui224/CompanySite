@@ -196,6 +196,7 @@ img {
         width: 90%;
         height: 50%;
         margin-left: 2%;
+        min-width: 260px;
     }
 
     nav {
