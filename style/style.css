@@ -8,6 +8,9 @@
 
   @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto:wght@100;300;400;900&display=swap');
 
+  html {
+    min-width: 280px;
+}
 header {
     width: 100%;
     height: 60px;
@@ -119,6 +122,7 @@ nav a:hover {
 
 .acceuil_presentation_img {
     width: 45%;
+    max-width: 400px;
     height: auto;
     display: flex;
     justify-content: flex-end;
@@ -135,4 +139,108 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media all and (max-width:980px) {
+    nav a {
+        font-size: 13px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+    
+    .acceuil_presentation_text p {
+        font-size: 14px;
+    }
+}
+
+@media all and (max-width:850px) {
+    nav a {
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+    
+    .acceuil_presentation_text p {
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width:750px) {
+    nav a {
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+    
+    .acceuil_presentation_text p {
+        font-size: 11px;
+    }
+
+    .acceuil_presentation_text {
+        gap: 15px;
+    }
+}
+@media all and (max-width:650px) {
+    header {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .header_logo {
+        width: 90%;
+        height: 50%;
+        margin-left: 2%;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: space-between;
+        padding: 0;
+        gap: 0;
+    }
+
+    nav a {
+        font-size: 10px;
+        width: 50%;
+        text-align: start;
+    }
+
+    nav a:hover {
+        border-top:  none;
+        border-bottom:2px solid #af0006;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .acceuil_presentation {
+        flex-direction: column-reverse;
+        gap: 20px;
+        height: 100%;
+    }
+
+    .acceuil_presentation_text {
+        margin-top: 0px;
+        width: 95%;
+        height: 40%;
+    }
+    
+    .acceuil_presentation_text p {
+        font-size: 11px;
+    }
+
+    .acceuil_presentation_text {
+        gap: 15px;
+    }
+
+    .acceuil_presentation_img {
+        min-width: 250px;
+    }
 }
