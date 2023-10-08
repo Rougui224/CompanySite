@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto:wght@100;300;400;900&display=swap');
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: absolute;
+    background-color: white;
+    box-shadow: 2px 5px 10px -5px gray;
+
+}
+
+.header_logo {
+    width: 230px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_logo_picture {
+    height: 100px;
+}
+
+.header_logo_picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    padding-right: 20px;
+    height: 100%;
+   
+}
+
+nav a {
+    text-decoration: none;
+    color: #E62129;
+    font-size: 15px;
+    height: 99%;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a:hover {
+    border-top:2px solid #af0006;
+}
+
+
+.acceuil {
+    width: 100%;
+    height:100vh ;
+    background-color: rgb(241, 237, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 20px;
+}
+
+.acceuil_presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 400px;
+    gap: 50px;
+    margin: auto;
+}
+
+.acceuil_presentation_text {
+    width: 45%;
+    height: 330px;
+    color: rgb(52, 52, 52);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.acceuil_presentation_text a {
+    color: white;
+    text-decoration: none;
+    background-color: #af0006;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 12px;
+    display: inline-block
+}
+
+.acceuil_presentation_text a:hover{
+    background:rgb(176, 32, 32);
+}
+
+.acceuil_presentation_text a:active{
+    box-shadow: inset 0px 1px 20px  rgb(11, 11, 11);
+}
+
+
+.acceuil_presentation_img {
+    width: 45%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+   
+   
+
+}
+
+span {
+    color: #E62129;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
