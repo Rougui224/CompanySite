@@ -108,7 +108,7 @@ nav a:hover {
     height: 40px;
     border-radius: 5px;
     padding: 12px;
-    display: inline-block
+    display: inline-block;
 }
 
 .acceuil_presentation_text a:hover{
@@ -139,6 +139,97 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.option {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.option h3 {
+    width: 80%;
+    margin:15px auto;
+    text-align: center;
+    height: 50px;
+    padding: auto;
+}
+
+.option_presentation {
+    width: 620px;
+    height:auto ;
+    display: grid;
+    margin: 10px auto;
+    text-align: center;
+    grid-template-columns: 300px 300px;
+    grid-template-rows:230px 230px ;
+    gap: 10px;
+
+}
+
+.option_presentation a:hover{
+    opacity: .7;
+
+}
+
+.option_presentation_campus {
+    background: no-repeat bottom center url('../pictures/campus.jpg');
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 20px -5px gray;
+    padding-top: 15px;
+    color: #af0006;
+
+}
+.option_presentation_billet {
+    background: no-repeat bottom center url('../pictures/avion.jpg');
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 20px -5px gray;
+    padding-top: 15px;
+    color: #af0006;
+
+
+}
+.option_presentation_tourism {
+    background: no-repeat bottom center url('../pictures/tourisme-acceuil.png');
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 20px -5px gray;
+    padding-top: 15px;
+    color: #af0006;
+
+
+}
+.option_presentation_rf {
+    background: no-repeat bottom center url('../pictures/regroupement.jpg');
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 20px -5px gray;
+    padding-top: 15px;
+    color: #af0006;
+
+
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(241, 237, 237);
+    padding: 15px 15px;
+
+}
+
+footer h3 {
+    display: inline-block;
+    color: #af0006;
+    margin-right: 20px;
+    
+}
+ footer p {
+    display: inline-block;
+    
 }
 
 @media all and (max-width:980px) {
@@ -244,4 +335,29 @@ img {
     .acceuil_presentation_img {
         min-width: 250px;
     }
+
+    .option {
+        height: auto;
+    }
+
+    .option h3 {
+        margin: 25px auto;
+    }
+    .option_presentation {
+        width: 300px;
+        grid-template-columns: 300px;
+        grid-template-rows: repeat(4, 230px);
+        gap: 15px;
+    }
+}
+
+@media all and (max-width:300px) {
+    .option_presentation {
+        width: 270px;
+        grid-template-columns: 270px;
+        grid-template-rows: repeat(4, 230px);
+        gap: 15px;
+    }
+
+    
 }
